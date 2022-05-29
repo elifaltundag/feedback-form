@@ -19,7 +19,8 @@
 <body>
     <div class="overlay"></div>
     <main class="form-container">
-        <form id="survey-form" action="" method="post" class="flex-col">
+        <form id="survey-form" action="https://formsubmit.co/elif.altundag.x@gmail.com" method="POST" class="flex-col">
+            <input type="hidden" name="_subject" value="[Feedback Form]">
             
             <div id="intro">
                 <h1 id="title">Feedback Form</h1>
@@ -42,14 +43,6 @@
                             <label for="email" id="email-label">Email &lpar;&ast;&rpar;</label>
                             <input type="email" required name="email" id="email" placeholder="ford.prefect@gmail.com">
                         </li>
-
-
-                        <li class="contact-info">
-                            <label for="number" id="number-label">Number</label>
-                            <input type="number" name="number" id="number" min="0" max="99999999999" placeholder="+1 420 4242 4020">
-                        </li>
-
-
                     </ul>
                 </fieldset>
 
@@ -764,7 +757,7 @@
 
 
             <div class="button">
-                <input type="submit" name="submit" id="submit" value="Send feedbacks">
+                <button type="submit" id="submit">Send feedbacks</button>
             </div>
         </form>
     </main>
