@@ -126,7 +126,7 @@ textarea {
     flex-direction: column;
 }
 
-#continent {
+#dropdown {
     flex-grow: 2;
 }
 

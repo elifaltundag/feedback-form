@@ -40,13 +40,13 @@
 
                         <li class="contact-info">
                             <label for="email" id="email-label">Email &lpar;&ast;&rpar;</label>
-                            <input type="email required" name="email" id="email" placeholder="ford.prefect@gmail.com">
+                            <input type="email" required name="email" id="email" placeholder="ford.prefect@gmail.com">
                         </li>
 
 
                         <li class="contact-info">
                             <label for="number" id="number-label">Number</label>
-                            <input type="number" name="number" id="number" placeholder="+1 420 4242 4020">
+                            <input type="number" name="number" id="number" min="0" max="99999999999" placeholder="+1 420 4242 4020">
                         </li>
 
 
@@ -90,7 +90,7 @@
                     <legend><h3>From</h3></legend>
                     <div class="continent-info">
                         <label for="continent" id="continent-label"><p class="explanaition">Choose your continent &colon;</p></label>
-                        <select name="continent" id="continent">
+                        <select name="continent" id="dropdown">
                             <option value="africa">Africa</option>
                             <option value="asia">Asia</option>
                             <option value="australia">Australia</option>
