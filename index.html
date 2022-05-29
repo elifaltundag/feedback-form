@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Feedback Form</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!-- CSS --> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <main class="form-container">
+        <form id="survey-form" action="mailto:elif.altundag.x@gmail.com" method="post" class="flex-col">
+            
+            <div id="intro">
+                <h1 id="title">Feedback Form</h1>
+                <p id="description">This feedback form consists of four sections: contact information, design, content and code reviews. You don't have to fill every part, but the fields marked with an asterisk &lpar;&ast;&rpar; on the first section must be filled in order to submit the form.</p>
+            </div> 
+        
+            <fieldset class="fs-primary">
+                <legend><h2 class="primary-title">About you</h2></legend>
+
+                <fieldset class="fs-about">
+                    <legend><h3 class="about-title">Contact</h3></legend>
+                    <ul>
+                        <li class="contact-info">
+                            <label for="name" id="name-label">Name &lpar;&ast;&rpar;</label>
+                            <input type="text" required name="name" id="name" placeholder="Ford Prefect">
+                        </li>
+
+
+                        <li class="contact-info">
+                            <label for="email" id="email-label">Email &lpar;&ast;&rpar;</label>
+                            <input type="email required" name="email" id="email" placeholder="ford.prefect@gmail.com">
+                        </li>
+
+
+                        <li class="contact-info">
+                            <label for="number" id="number-label">Number</label>
+                            <input type="tnumber" name="number" id="number" placeholder="+1 420 4242 4020">
+                        </li>
+
+
+                    </ul>
+                </fieldset>
+
+
+
+                <fieldset class="fs-about">
+                    <legend><h3 class="about-title">Background</h3></legend>
+
+                    <label for="profession" id="profession-label">How would you describe yourself&quest; &lpar;You can choose more than a single option&rpar;</label>
+
+                    <ul class="professions-list">
+                        <li>
+                            <label for="background" id="developer-label" class="side">
+                                <input type="checkbox" id="developer" name="profession" value="developer">Developer
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="background" id="designer-label" class="side">
+                                <input type="checkbox" id="designer" name="profession" value="designer">Designer
+                            </label>
+                        </li>
+            
+                        <li>
+                            <label for="background" id="visitor-label" class="side">
+                                <input type="checkbox" id="visitor" name="profession" value="visitor">Visitor
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for="background" id="prof-no-matter-label" class="side">
+                                <input type="checkbox" id="prof-no-matter" name="profession" value="prof-no-matter">Doesn&apos;t matter
+                            </label>        
+                        </li>
+                    </ul>
+                </fieldset>
+
+
+                <fieldset class="fs-about">
+                    <legend><h3>From</h3></legend>
+                    <div class="continent-info">
+                        <label for="continent" id="continent-label">Choose your continent &colon;</label>
+                        <select name="continent" id="continent">
+                            <option value="africa">Africa</option>
+                            <option value="asia">Asia</option>
+                            <option value="australia">Australia</option>
+                            <option value="europe">Europe</option>
+                            <option value="north-america">North America</option>
+                            <option value="south-america">South America</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                
+
+            </fieldset>
+
+
+
+
+
+            <fieldset class="fs-primary">
+                <legend><h2 class="primary-title">Design</h2></legend>
+
+            </fieldset>
+
+
+
+
+
+            <fieldset class="fs-primary">
+                <legend><h2 class="primary-title">Content</h2></legend>
+
+            </fieldset>
+
+
+
+
+
+            <fieldset class="fs-primary">
+                <legend><h2 class="primary-title">Code</h2></legend>
+
+            </fieldset>
+
+            <div class="button">
+                <input type="submit" name="submit id=submit" value="Send feedbacks">
+            </div>
+
+
+
+
+        
+        </form>
+    </main>
+</body>
+</html>
