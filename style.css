@@ -100,9 +100,6 @@ textarea {
     gap: 0.3em;
 }
 
-.primary-title {
-    
-}
 
 .contact-info {
     margin: 0.5em 0;
@@ -130,9 +127,6 @@ textarea {
     flex-grow: 2;
 }
 
-.rate-label {
-
-}
 
 .rate-list {
     display: grid;
