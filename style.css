@@ -154,7 +154,7 @@ textarea {
 }
 
 .explanaition {
-    margin: 0.1em 0 0.8em;
+    margin: 0.4em 0 0.8em; 
     font-weight: 500;
 }
 
@@ -188,6 +188,7 @@ textarea {
     background-color: hsla(var(--clr-light), 0.8);
     color: hsl(var(--clr-dark));
 }
+
 
 .contact-info input, 
 .continent-info select,
