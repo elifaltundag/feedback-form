@@ -251,11 +251,9 @@ h2 {
 /*! MEDIA QUERIES ------ */
 /*! -------------------- */
 @media screen and (min-width: 700px) {
-    
-
     .professions-list {
         display: grid;
-        grid-template-columns: repeat(4, max(13ch, 15%));
+        grid-template-columns: repeat(4, max(15ch, 15%));
         grid-template-areas: "developer designer visitor no-matter";
     }
 }
