@@ -52,6 +52,11 @@ textarea {
     resize: none;
 }
 
+::selection {
+    background-color: hsl(var(--clr-base));
+    color: hsl(var(--clr-light));
+}
+
 
 /*! -------------------- */
 /*! UTILITY CLASSES ---- */
