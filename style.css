@@ -173,7 +173,8 @@ textarea {
     padding: 0.2em 0.5em;
     border-radius: 0.3em;
     border: none;
-    background-color: hsla(var(--clr-light), 0.8);
+    outline: none;
+    background-color: hsla(var(--clr-light), 0.2);
     color: hsl(var(--clr-dark));
 }
 
@@ -202,6 +203,18 @@ h2 {
 /*! -------------------- */
 /*! FORM ELEMENTS ------ */
 /*! -------------------- */
+textarea::-webkit-scrollbar {
+    width: 0.6em;
+    background-color: hsla(var(--clr-dark), 0.2);
+    border-radius: 0.3em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    width: 0.8em;
+    background-color: hsla(var(--clr-base), 0.5);
+    border-radius: 0.3em;
+}
+
 #survey-form {
     position: relative;
     z-index: 5;
@@ -240,6 +253,22 @@ h2 {
     font-size: 1.4rem;
     box-shadow: 0px 0px 5px 0px hsla(var(--clr-dark), 0.7);
 }
+
+/*! -------------------- */
+/*! STATES  ------------ */
+/*! -------------------- */
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+select:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+    background-color: hsla(var(--clr-light), 0.7);
+} 
+
+
+
 
 /*! -------------------- */
 /*! MEDIA QUERIES ------ */
