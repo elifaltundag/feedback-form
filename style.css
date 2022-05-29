@@ -97,7 +97,7 @@ textarea {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.1em;
+    gap: 0.3em;
 }
 
 .primary-title {
@@ -115,8 +115,10 @@ textarea {
 .professions-list {
     display: grid;
     grid-template-areas: 
-        "developer designer"
-        "visitor no-matter";
+        "developer" 
+        "designer"
+        "visitor" 
+        "no-matter";
 }
 
 .continent-info {
@@ -134,10 +136,7 @@ textarea {
 
 .rate-list {
     display: grid;
-    grid-template-columns: 10ch auto;
-    grid-template-areas: 
-        "left right";
-    gap: 1.5em;
+    grid-template-areas: "5" "4" "3" "2" "1" "0";  
 }
 
 .rate-item {
@@ -146,11 +145,6 @@ textarea {
     justify-content: flex-start;
     column-gap: 0.1em;
     margin: 0.2em 0 0.4em;
-}
-
-.rate-3-item {
-    display: flex;
-    flex-direction: column;
 }
 
 .explanaition {
@@ -242,6 +236,7 @@ h2 {
 }
 
 #submit {
+    cursor: pointer;
     padding: 1em 2em;
     border-radius: 0.5em;
     background-color: hsla(var(--clr-base), 0.8);
@@ -255,6 +250,16 @@ h2 {
 /*! -------------------- */
 /*! MEDIA QUERIES ------ */
 /*! -------------------- */
+@media screen and (min-width: 700px) {
+    
+
+    .professions-list {
+        display: grid;
+        grid-template-columns: repeat(4, max(13ch, 15%));
+        grid-template-areas: "developer designer visitor no-matter";
+    }
+}
+
 @media screen and (min-width: 900px) {
     .continent-info {
         display: grid;
@@ -268,26 +273,10 @@ h2 {
         grid-template-areas: "contact-label contact-input empty";
     }
 
-    .professions-list {
-        display: grid;
-        grid-template-columns: repeat(4, max(13ch, 15%));
-        grid-template-areas: "developer designer visitor no-matter";
-    }
-
     .rate-list {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-
-    .rate-3-item {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .rate-3-item-last {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1.2fr;
+        grid-template-areas: "5 4 3 2 1 0";
+        grid-template-columns: repeat(5, 1fr) 1.5fr;
     }
 
 }
