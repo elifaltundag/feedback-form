@@ -248,6 +248,7 @@ textarea::-webkit-scrollbar-thumb {
     border-radius: 0.5em;
     background-color: hsl(var(--clr-base));
     color: hsl(var(--clr-light));
+    border: none;
     font-family: var(--ff-sans-serif);
     font-weight: 600;
     font-size: 1.4rem;
@@ -282,6 +283,11 @@ textarea:focus {
 }
 
 @media screen and (min-width: 900px) {
+    .form-container {
+        width: min(90%, 900px);
+        margin: 0 auto;
+    }
+
     .continent-info {
         display: grid;
         grid-template-columns: 35% 1fr 25%;
@@ -297,14 +303,7 @@ textarea:focus {
     .rate-list {
         display: grid;
         grid-template-areas: "5 4 3 2 1 0";
-        grid-template-columns: repeat(5, 1fr) 1.5fr;
+        grid-template-columns: repeat(6, auto);
     }
 
-}
-
-@media screen and (min-width: 1800px) {
-    .form-container {
-        width: min(90%, 900px);
-        margin: 0 auto;
-    }
 }
